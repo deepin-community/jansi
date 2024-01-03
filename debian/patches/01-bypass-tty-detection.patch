@@ -1,0 +1,16 @@
+Description: Bypass the TTY detection and assume it's always true. Otherwise
+ the Maven output is no longer colorized when building a package with debuild
+ or dpkg-buildpackage. This was the behavior of jansi 1.x
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: not-needed
+--- a/src/main/java/org/fusesource/jansi/AnsiConsole.java
++++ b/src/main/java/org/fusesource/jansi/AnsiConsole.java
+@@ -259,7 +259,7 @@
+             isAtty = false;
+             withException = true;
+         }
+-        isatty = isAtty;
++        isatty = true;
+ 
+         final AnsiOutputStream.WidthSupplier width;
+         final AnsiProcessor processor;

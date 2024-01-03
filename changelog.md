@@ -1,31 +1,184 @@
 # ![Jansi](http://fusesource.github.io/jansi/images/project-logo.png)
-
 <!-- git log --pretty=format:'* [`%h`](https://github.com/fusesource/jansi/commit/%H) %s' -->
+
+## [Jansi 2.4.0][2_4_0], released 2021-10-14
+[2_4_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.4.0
+
+* [`2cf4461`](https://github.com/fusesource/jansi/commit/2cf446182c823a4c110411b765a1f0367eb8a913) Fix support for GraalVM native-image, fixes #199
+* [`d83ab13`](https://github.com/fusesource/jansi/commit/d83ab13378ca17bc359ba1c780b2a2f0474877b1) Code cleanup
+* [`3d97645`](https://github.com/fusesource/jansi/commit/3d976451adce20e8ab48528fbe4051595a1d21c5) Improve error reporting when the tmp dir has the noexec flag, fixes #193
+* [`454d858`](https://github.com/fusesource/jansi/commit/454d8582c689af7646a21b036e887d6737b20e66) Support Mac-arm64 target, fixes #218 (#222)
+* [`4e5ab5b`](https://github.com/fusesource/jansi/commit/4e5ab5b1628df50f06d13fbe2d1bfeeead37d01e) Support linux armv6 platform, fixes #201 (#221)
+* [`98c430a`](https://github.com/fusesource/jansi/commit/98c430a4d42368f9a5524470e74ca87aeee03bcb) Change the behavior to fail gracefuly in case the system is not supported, fixes #204
+* [`cb843bf`](https://github.com/fusesource/jansi/commit/cb843bff3fab9cfa2008093483cf6c161899a749) Switch to test on LTS versions
+* [`ae20846`](https://github.com/fusesource/jansi/commit/ae20846652a85926676ad61b90dba43f49b6b636) Remove native methods not used by jansi, fixes #208
+* [`1ab54ca`](https://github.com/fusesource/jansi/commit/1ab54ca6d40c92600411e7d84bbe02d22e22fb06) Add aarch64 support, fix #219
+* [`b3fe92b`](https://github.com/fusesource/jansi/commit/b3fe92b4ba2dfe7af23a7175e00329724ff0644a) Remove old Win XP need to download something
+* [`321a8ff`](https://github.com/fusesource/jansi/commit/321a8ff71c731e10f4ea05c607860180276b2215) [maven-release-plugin] prepare for next development iteration
+* [`4e2e6a9`](https://github.com/fusesource/jansi/commit/4e2e6a9f6813bedb4d788b2cd1f70c5617214a9a) [maven-release-plugin] prepare release jansi-2.3.4
+* [`ba575ba`](https://github.com/fusesource/jansi/commit/ba575ba6ef2e963405c462db271d31ef05442dbb) Update changelog for release
+* [`09722b7`](https://github.com/fusesource/jansi/commit/09722b7cccc8a99f14ac1656db3072dbeef34478) Disable colors when running inside emacs without comint, fixes #205
+* [`e019a75`](https://github.com/fusesource/jansi/commit/e019a75ee267a53a48d02ac983266cdf2b4e16a9) Add missing colors to AnsiRender, fixes #213
+* [`01d68f0`](https://github.com/fusesource/jansi/commit/01d68f03c6b69c323a05738efec1fd4404c0f0f8) Fix Ansi outputting escape sequences when disabled, fixes #215
+* [`3ba11e9`](https://github.com/fusesource/jansi/commit/3ba11e9d324f81b359229715ceacadcb9137ff46) Avoid possible NPE, fixes #214
+
+## [Jansi 2.3.4][2_3_4], released 2021-07-23
+[2_3_4]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.3.4
+
+* [`09722b7`](https://github.com/fusesource/jansi/commit/09722b7cccc8a99f14ac1656db3072dbeef34478) Disable colors when running inside emacs without comint, fixes #205
+* [`e019a75`](https://github.com/fusesource/jansi/commit/e019a75ee267a53a48d02ac983266cdf2b4e16a9) Add missing colors to AnsiRender, fixes #213
+* [`01d68f0`](https://github.com/fusesource/jansi/commit/01d68f03c6b69c323a05738efec1fd4404c0f0f8) Fix Ansi outputting escape sequences when disabled, fixes #215
+* [`3ba11e9`](https://github.com/fusesource/jansi/commit/3ba11e9d324f81b359229715ceacadcb9137ff46) Avoid possible NPE, fixes #214
+
+## [Jansi 2.3.3][2_3_3], released 2021-06-11
+[2_3_3]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.3.3
+
+* [`e4d58d9`](https://github.com/fusesource/jansi/commit/e4d58d94eab5ecbc2f466978a5006835cf728da7) Jansi fails to start on Mac arm, fixes #207
+
+## [Jansi 2.3.2][2_3_2], released 2021-03-16
+[2_3_2]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.3.2
+
+* [`629fdaf`](https://github.com/fusesource/jansi/commit/629fdafae88a1b468b9d43f6d9cd30cebc881ff5) Fix sigsegv in chdir / setenv
+* [`ffc9fbb`](https://github.com/fusesource/jansi/commit/ffc9fbbb9ac18cf8e299c1ab8fefe3ccee6fea4b) Add a simple test for CLibrary.setenv/chdir
+* [`35bd6b5`](https://github.com/fusesource/jansi/commit/35bd6b5c6e23a5f47c7afe7fbb16fd0dc760e7ad) Add CI build
+* [`65e93ed`](https://github.com/fusesource/jansi/commit/65e93ed8d8ee6d93252d5b6f8f3702a3c0cbb299) Use correct scm urls, fixes #197
+* [`86bd1c3`](https://github.com/fusesource/jansi/commit/86bd1c3552f6b446feabf25ed195cd26e574cdf4) fix Maven Central badge
+
+## [Jansi 2.3.1][2_3_1], released 2021-02-11
+[2_3_1]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.3.1
+
+* [`753a7f1`](https://github.com/fusesource/jansi/commit/753a7f18ba80f1c99fd65474813a350553b25ed8) Fix completely broken windows code for chdir/setenv
+
+## [Jansi 2.3.0][2_3_0], released 2021-02-11
+[2_3_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.3.0
+
+* [`6d61a76`](https://github.com/fusesource/jansi/commit/6d61a763ebc4a97399e57c38e7c2e0eac7b8cf3c) Add setenv and chdir methods to the CLibrary, fixes #196
+* [`abca999`](https://github.com/fusesource/jansi/commit/abca99945574f468768e2648a459eba0ad42f122) Improve build reproductibility, fixes #192
+
+## [Jansi 2.2.0][2_2_0], released 2021-01-20
+[2_2_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.2.0
+
+* [`d8934d8`](https://github.com/fusesource/jansi/commit/d8934d82bd64a3899f2c6ca2eb838dc3f79e0646) Output of Jansi is corrupted in cygwin console on Windows 7, fixes #190
+* [`6ace12e`](https://github.com/fusesource/jansi/commit/6ace12ec4b355425565552f0ae5d393469be3e50) Remove unused import
+* [`0b1e2ec`](https://github.com/fusesource/jansi/commit/0b1e2ecf1e0fff0fbb5ff4e146ff720bacc97ac2) Add a getTerminalWidth method, fixes #175
+* [`8a27841`](https://github.com/fusesource/jansi/commit/8a278418a3fb92f9e220e8a0a55100b72414b8e1) Add @since tags on new methods
+* [`faf9331`](https://github.com/fusesource/jansi/commit/faf93318be3cda0b3a3894ae9d2032835601bc73) Bring back the AnsiRenderer, fixes #184
+* [`0a06ceb`](https://github.com/fusesource/jansi/commit/0a06ceb8710f97e42e15999d7b90d6634533e745) Force removal of unneeded OSGi headers
+* [`94439a9`](https://github.com/fusesource/jansi/commit/94439a9467d790743ff3a0bf7dbe186fb043c97b) Create javadoc for the native methods
+* [`6097e80`](https://github.com/fusesource/jansi/commit/6097e8076332295bf832d784e580100c02f6e703) Fix javadoc syntax
+* [`254ddf2`](https://github.com/fusesource/jansi/commit/254ddf229c6c48b5ce38ae3cf4325d111aaaf1eb) Fix OSGi exports
+* [`4a530b1`](https://github.com/fusesource/jansi/commit/4a530b1b550e81b0d478e125636d2d21e02be747) Merge pull request #188 from romge/apply-method
+* [`30cd5a9`](https://github.com/fusesource/jansi/commit/30cd5a9a3126c251333a93675bdf586719aa78f7) Update readme.md
+* [`399473a`](https://github.com/fusesource/jansi/commit/399473a583018927ef4a4dcaa2aa14502bb96885) Handle SGRs with multiple options
+* [`f8fa335`](https://github.com/fusesource/jansi/commit/f8fa335b932058a2dc1dc685722abec953097d6e) Mapping negative absolute positions to the first column/row
+* [`8e1b67b`](https://github.com/fusesource/jansi/commit/8e1b67b3ed7fe0d4cc3765c099f29fe8d9e1995e) Generalize cursor movement
+* [`2f93859`](https://github.com/fusesource/jansi/commit/2f93859ec3046920aedad7dfbb5f8935187e68b2) Add Ansi.apply method
+* [`d386c6a`](https://github.com/fusesource/jansi/commit/d386c6afa62e7c5dc883e7158577caf175eb0d3a) configure _reproducible for maven-bundle-plugin #185
+* [`b8f80e4`](https://github.com/fusesource/jansi/commit/b8f80e47f8a7ad5570ac5007e7b0438e78e7fd81) update scm tag
+
+## [Jansi 2.1.1][2_1_1], released 2020-12-15
+[2_1_1]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.1.1
+
+* [`9a84c14`](https://github.com/fusesource/jansi/commit/9a84c14dc6614976e387dadd997d8889d45cdca6) Report the error in the exception, fixes #183
+* [`b9348fc`](https://github.com/fusesource/jansi/commit/b9348fc702a6800f47c072f80abc757a0496495f) Restore binary compatibility with previous versions
+* [`f5a9b92`](https://github.com/fusesource/jansi/commit/f5a9b92cfaa98f3623946e5ffaf5f73e8b71a777) add faint to test table
+* [`39616d3`](https://github.com/fusesource/jansi/commit/39616d3acc2a313de68c95d1df6bd1a1f59f8713) make build reproducible
+
+## [Jansi 2.1.0][2_1_0], released 2020-12-07
+[2_1_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.1.0
+
+* [`235b653`](https://github.com/fusesource/jansi/commit/235b653bbb57101dca7db3ff2f880115d781bc38) 256 colors and truecolor support
+* [`7dc9c1b`](https://github.com/fusesource/jansi/commit/7dc9c1b553542a6d7bca4faaf0966fd1547a4327) Rename AnsiProcessorType to AnsiType
+* [`5f87f09`](https://github.com/fusesource/jansi/commit/5f87f097602f3800ac3afd916bc7d63db483af72) Remove jdk 1.7 specific method, as we're still on jdk 1.6
+* [`322c4d9`](https://github.com/fusesource/jansi/commit/322c4d9790e5410988ab3a165d4c9c998e2b7daf) Move IO implementation classes to a separate package
+* [`04d771c`](https://github.com/fusesource/jansi/commit/04d771c3c7f2a4c29301191e65e7ce3cdeb92918) Move IO implementation classes to a separate package
+* [`2babe3d`](https://github.com/fusesource/jansi/commit/2babe3dfa5506f5348d77e9eb3f0d89d7ae0eea0) Pass the console handle directly to the WindowsAnsiProcessor
+* [`cc7c8d9`](https://github.com/fusesource/jansi/commit/cc7c8d988c766487f04b067834e7bd49db9306f1) Change test into an assertion as mapLibraryName should never return null
+* [`63bd892`](https://github.com/fusesource/jansi/commit/63bd892b2bdfc253ec119a57bdd42df5e80fd859) Improve dynamism so that the ansi mode can be set per stream and after initialization, #178
+* [`8c681e9`](https://github.com/fusesource/jansi/commit/8c681e900758716824152242fd881a20645b6bd3) Add a (manuel) test
+* [`9477b53`](https://github.com/fusesource/jansi/commit/9477b530f9c91fdf374ae28d6f704d24163ad4f3) Expose a isInstalled() method
+* [`8be96cc`](https://github.com/fusesource/jansi/commit/8be96cc05d46da91a8bb0bd84b03c5b0baa3c8ed) Fix typo in AnsiProcessor name
+* [`f43e32b`](https://github.com/fusesource/jansi/commit/f43e32b8dd924d48b924fee2dd6edc615baf46e9) Remove references to old fusesource web site
+* [`a00711c`](https://github.com/fusesource/jansi/commit/a00711c34177d1f5a82c3f4e01a0fa09ce9f5bdc) Avoid possible flushing problems when displaying the logo
+* [`9f43faa`](https://github.com/fusesource/jansi/commit/9f43faa66139ccc19e53136895280d8b13be3616) Avoid hardcoded numbers
+* [`23e71d0`](https://github.com/fusesource/jansi/commit/23e71d0abaefc4d7c8a5df1230cc2b3cdaa9c858) Fix test to identify pipes on cygwin/msys, fixes #179
+* [`0926754`](https://github.com/fusesource/jansi/commit/092675487c91133144d4f1b81b5cf69a444883d3) Fix ansi stream state after an exception is thrown, fixes #30
+* [`c77ec6c`](https://github.com/fusesource/jansi/commit/c77ec6c5e48c89ae2b641aa58e50b207d3edeaf0) Just use a plain random to avoid a dependency on SecureRandom
+* [`090132d`](https://github.com/fusesource/jansi/commit/090132d8160e50ef0c9d4b85990b32744f14e439) Movement with cursorUpLine/cursorDownLine don't work on windows, fixes #140
+* [`2e84084`](https://github.com/fusesource/jansi/commit/2e840849f842c74943718ec291acecfb4556a9ed) jansi parent dependency upgrade, fixes #154
+* [`8420b9c`](https://github.com/fusesource/jansi/commit/8420b9c381fc41f36561f8dc453b5ba6765947e3) Ansi should implement java.lang.Appendable, fixes #168
+* [`70adaeb`](https://github.com/fusesource/jansi/commit/70adaebb1d8d38c9851b4de1c846441d753c8152) Check values when emitting ansi sequences for cursor movement, fixes #172
+* [`0171ecb`](https://github.com/fusesource/jansi/commit/0171ecba47d28cfb467b04a87617205d41072fa3) Allow the re-initialization of streams, fixes #178
+* [`5ce085b`](https://github.com/fusesource/jansi/commit/5ce085b7e3acc9a3a95d42f40a49be0cec301947) Merge pull request #177 from MrDOS/improvement/use-freebsd-container-working-directory
+* [`816da96`](https://github.com/fusesource/jansi/commit/816da962a3e592e933a82d57c1a295ced6520d3f) Use the FreeBSD container working directory.
+* [`4731663`](https://github.com/fusesource/jansi/commit/47316638568da54154821373f3e3d63388a481dc) Fix changelog
+
+## [Jansi 2.0.1][2_0_1], released 2020-10-28
+[2_0_1]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.0.1
+
+* [`282568f`](https://github.com/fusesource/jansi/commit/282568f5abe188aeebd04b0c8714d2e7f0f77762) Make sure to include the jansi.properties file in native mode, use regex for libs
+
+## [Jansi 2.0][2_0], released 2020-10-26
+[2_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.0
+
+* [`8d65958`](https://github.com/fusesource/jansi/commit/8d659588bc7861397073532a926cafc9fb58c08c) Remove old pom
+* [`3d828cb`](https://github.com/fusesource/jansi/commit/3d828cb998c13e404de7db0d984d4c945682232b) Try to be more resilient when verifying the extracted library
+* [`8bafdf7`](https://github.com/fusesource/jansi/commit/8bafdf7dbec790d7180863b033936f1d0e85136f) Add resources for graalvm support
+* [`71b5164`](https://github.com/fusesource/jansi/commit/71b5164523ee19d687f0d404122c615002b66291) Clean a bit the native build part
+* [`3ac28bb`](https://github.com/fusesource/jansi/commit/3ac28bb72c44e3a6a8c021610a1d218e415b7a37) Upgrade to junit 5
+* [`146b5f9`](https://github.com/fusesource/jansi/commit/146b5f9e8d9e8cb2a8fee6d90e3fea32cb45b549) Reorganize to a single module
+* [`4d24cd8`](https://github.com/fusesource/jansi/commit/4d24cd8e62556c8a3254c9a31831e72143f17910) Remove hardly used stuff
+* [`aa0c419`](https://github.com/fusesource/jansi/commit/aa0c4194b41f6ee0aeb83922d4cc39f585df78ac) Include jansi native
+* [`f252f0a`](https://github.com/fusesource/jansi/commit/f252f0a6cdd6223582201202971b94b05a7ce56a) Switch to 2.0-SNAPSHOT
+* [`672c0f9`](https://github.com/fusesource/jansi/commit/672c0f9bf3adc9847d0a1b5f881c028604000f7b) Forgot one call to new PrintStream
+* [`8283aaf`](https://github.com/fusesource/jansi/commit/8283aafa1a7870488e302c7499b9e127ae9265ba) Fix possible encoding issues in the new AnsiNoSyncOutputStream
+* [`182b884`](https://github.com/fusesource/jansi/commit/182b884d73d950e6d370e70162f92b0fd4b79372) Fix attributes used when erasing on windows, fixes #160
+* [`e12ff97`](https://github.com/fusesource/jansi/commit/e12ff979f0e5ede59b477733349c6f333a2c0314) Merge pull request #173 from fusesource/dependabot/maven/jansi/junit-junit-4.13.1
+* [`8370e29`](https://github.com/fusesource/jansi/commit/8370e29bb5cda83ccab1ab472debde59deb22844) Use a different enum when using the ENABLE_VIRTUAL_TERMINAL_PROCESSING on windows
+* [`7be32c5`](https://github.com/fusesource/jansi/commit/7be32c54b3fdd0c60d5930657b56334031ff32cc) Do use the new variables
+* [`ef60bc5`](https://github.com/fusesource/jansi/commit/ef60bc5bf53cdb29ec706517d2eec5c988d55238) Use constants for properties, allow by-passing the new system
+* [`11b52d2`](https://github.com/fusesource/jansi/commit/11b52d20a93763653f9327939431453556f50c4f) Fix logo
+* [`57aa84d`](https://github.com/fusesource/jansi/commit/57aa84d4120395922458f61f20e741198f051087) Fix windows support, do not use reflection while creating the system out/err print streams
+* [`07916c1`](https://github.com/fusesource/jansi/commit/07916c1af9769ded99ce6770db1348db4e062921) Optimize system print streams when processing ANSI sequences
+* [`f6e8a9a`](https://github.com/fusesource/jansi/commit/f6e8a9a5527805c102761dec14000f4dcbd7c32e) Remove unneeded boxing/unboxing
+* [`753c662`](https://github.com/fusesource/jansi/commit/753c6625e528ef9245ba469d004ca8e2661a010a) Bump junit from 4.7 to 4.13.1 in /jansi
+* [`1461096`](https://github.com/fusesource/jansi/commit/146109610a85892efdad4f50a1a974d9d6ac21ee) fixed typos giving ANSI output inconsistent with Ansi method name
+* [`c2aaada`](https://github.com/fusesource/jansi/commit/c2aaadaff3b8f5e34d6767585f6ba668fa2ba651) introduce jansi-native
+* [`f9e85d0`](https://github.com/fusesource/jansi/commit/f9e85d0c48713743f671d59253060d3e8cb8e462) #151 extracted more common code to AnsiProcessor
+* [`7e6bd5b`](https://github.com/fusesource/jansi/commit/7e6bd5b2a5f10a32ec50e3d85b2c452328bdbac1) #151 extracted AnsiProcessor and WindowsAnsiProcessor
+* [`3b65176`](https://github.com/fusesource/jansi/commit/3b6517625edd9b66ef22ce9109b1746d27ead8a9) typo...
+* [`48489d0`](https://github.com/fusesource/jansi/commit/48489d09c1731b8afb9e9cad94688b248fe8fcf3) #153 fixed buffer size
+* [`0e7a582`](https://github.com/fusesource/jansi/commit/0e7a5822f56dfa4345ac74ebfeacf8fe4207845b) example artifact has better maven-metadata than jansi
+* [`adb9e24`](https://github.com/fusesource/jansi/commit/adb9e24fccac4107f705327cd8fe28739c5f6d12) enhance memory usage using buffer, or avoiding alloc
+* [`2f866c4`](https://github.com/fusesource/jansi/commit/2f866c4cf31b8ae44e005515326ad9b2819a394f) #146 add support for ConEmu (used by cmder)
+* [`fe749a5`](https://github.com/fusesource/jansi/commit/fe749a526f1c1d6925e60fd6deb939f54732cad7) prepare for next development iteration
+* [`da13459`](https://github.com/fusesource/jansi/commit/da13459c758e94f31ac6a24c48fac3ed5abab5c9) fixed links to commit
+* [`07702b4`](https://github.com/fusesource/jansi/commit/07702b455d23034523c2f5be0e52dda82973699e) prepare 1.18 site publication
 
 ## [Jansi 1.18][1_18], released 2019-04-02
 [1_18]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.18
 
-* [`d52d37d`](https://github.com/fusesource/hawtjni/commit/d52d37df44a7262240cd1e3d471025ca255ce7f9) Switch to hawtjni 1.17
-* [`bbd72d6`](https://github.com/fusesource/hawtjni/commit/bbd72d6e26f4e70a20a5736a496f9cb9d354ca3f) Fix error messages, #134
-* [`3101eeb`](https://github.com/fusesource/hawtjni/commit/3101eeb7208d190f171a6fbded45bd984f0606dd) Provide an alternative way to get jansi version
-* [`5a5e8cb`](https://github.com/fusesource/hawtjni/commit/5a5e8cbfae657900bd7d1caa55e2978086394e5d) #130 added Automatic-Module-Name to manifest for Java 9 auto-module
-* [`1c4b015`](https://github.com/fusesource/hawtjni/commit/1c4b015d16432295e786dc4f806cdd077c85043e) Merge branch 'master' of https://github.com/fusesource/jansi.git
-* [`70ff98d`](https://github.com/fusesource/hawtjni/commit/70ff98d5cbd5fb005d8a44ed31050388b256f9c6) switch to 1.18-SNAPSHOT # Conflicts: #     example/pom.xml #       jansi/pom.xml # pom.xml
-* [`d5f60ed`](https://github.com/fusesource/hawtjni/commit/d5f60edf0f8c15c0c888e2aa5980c023ef1c8c9e) updated changelog for 1.17.1 release
-* [`44b1ebf`](https://github.com/fusesource/hawtjni/commit/44b1ebf7c877f6b14aaa31f55b8e4ee47350d991) added Maven central icon
-* [`b1ef765`](https://github.com/fusesource/hawtjni/commit/b1ef7659b711e5c94272b3802d9e0ed6feebda62) #98 added link to HawtJNI Runtime Library class documentation
-* [`0507042`](https://github.com/fusesource/hawtjni/commit/0507042f44562316339b27fe997ad6456e674cf4) fixed compiler warning
-* [`7ae726d`](https://github.com/fusesource/hawtjni/commit/7ae726d549de8d78cf425b1a3d2c022eb1b1cd75) improved javadoc
-* [`272f395`](https://github.com/fusesource/hawtjni/commit/272f395e5eb7a38f075ec0a125d75f8c19795ca4) added details on redirection to a file
-* [`e2ac629`](https://github.com/fusesource/hawtjni/commit/e2ac629b77614be325c6603ce804578ddb11749c) #124 detect console handle from stderr separately from stdout
-* [`3a9c8fb`](https://github.com/fusesource/hawtjni/commit/3a9c8fbeae40b18268af3d4d87fb81084233ff9f) switch to 1.18-SNAPSHOT
-* [`bca4c36`](https://github.com/fusesource/hawtjni/commit/bca4c365eaa8492297e9d0fc02c6abc1fdd5d4b1) updated changelog for 1.17.1 release
-* [`b602f13`](https://github.com/fusesource/hawtjni/commit/b602f1301073cc22e60348d89807f37313bd5454) added Maven central icon
-* [`a463253`](https://github.com/fusesource/hawtjni/commit/a46325307f51194ca7dd007d2042dc38bc61af0d) #98 added link to HawtJNI Runtime Library class documentation
-* [`6af32f4`](https://github.com/fusesource/hawtjni/commit/6af32f434126611cbe8f362bca2488e4f5e72859) fixed compiler warning
-* [`49e8293`](https://github.com/fusesource/hawtjni/commit/49e829380f599f79b8c82b3c8ea7aae56918ba02) improved javadoc
-* [`3302b8f`](https://github.com/fusesource/hawtjni/commit/3302b8f4d9276d0f1c1f3698bc5f6440d5dab5a8) added details on redirection to a file
-* [`9338527`](https://github.com/fusesource/hawtjni/commit/93385273035124d3541e90e3a15568371aa2f474) #124 detect console handle from stderr separately from stdout
+* [`d52d37d`](https://github.com/fusesource/jansi/commit/d52d37df44a7262240cd1e3d471025ca255ce7f9) Switch to hawtjni 1.17
+* [`bbd72d6`](https://github.com/fusesource/jansi/commit/bbd72d6e26f4e70a20a5736a496f9cb9d354ca3f) Fix error messages, #134
+* [`3101eeb`](https://github.com/fusesource/jansi/commit/3101eeb7208d190f171a6fbded45bd984f0606dd) Provide an alternative way to get jansi version
+* [`5a5e8cb`](https://github.com/fusesource/jansi/commit/5a5e8cbfae657900bd7d1caa55e2978086394e5d) #130 added Automatic-Module-Name to manifest for Java 9 auto-module
+* [`1c4b015`](https://github.com/fusesource/jansi/commit/1c4b015d16432295e786dc4f806cdd077c85043e) Merge branch 'master' of https://github.com/fusesource/jansi.git
+* [`70ff98d`](https://github.com/fusesource/jansi/commit/70ff98d5cbd5fb005d8a44ed31050388b256f9c6) switch to 1.18-SNAPSHOT # Conflicts: #     example/pom.xml #       jansi/pom.xml # pom.xml
+* [`d5f60ed`](https://github.com/fusesource/jansi/commit/d5f60edf0f8c15c0c888e2aa5980c023ef1c8c9e) updated changelog for 1.17.1 release
+* [`44b1ebf`](https://github.com/fusesource/jansi/commit/44b1ebf7c877f6b14aaa31f55b8e4ee47350d991) added Maven central icon
+* [`b1ef765`](https://github.com/fusesource/jansi/commit/b1ef7659b711e5c94272b3802d9e0ed6feebda62) #98 added link to HawtJNI Runtime Library class documentation
+* [`0507042`](https://github.com/fusesource/jansi/commit/0507042f44562316339b27fe997ad6456e674cf4) fixed compiler warning
+* [`7ae726d`](https://github.com/fusesource/jansi/commit/7ae726d549de8d78cf425b1a3d2c022eb1b1cd75) improved javadoc
+* [`272f395`](https://github.com/fusesource/jansi/commit/272f395e5eb7a38f075ec0a125d75f8c19795ca4) added details on redirection to a file
+* [`e2ac629`](https://github.com/fusesource/jansi/commit/e2ac629b77614be325c6603ce804578ddb11749c) #124 detect console handle from stderr separately from stdout
+* [`3a9c8fb`](https://github.com/fusesource/jansi/commit/3a9c8fbeae40b18268af3d4d87fb81084233ff9f) switch to 1.18-SNAPSHOT
+* [`bca4c36`](https://github.com/fusesource/jansi/commit/bca4c365eaa8492297e9d0fc02c6abc1fdd5d4b1) updated changelog for 1.17.1 release
+* [`b602f13`](https://github.com/fusesource/jansi/commit/b602f1301073cc22e60348d89807f37313bd5454) added Maven central icon
+* [`a463253`](https://github.com/fusesource/jansi/commit/a46325307f51194ca7dd007d2042dc38bc61af0d) #98 added link to HawtJNI Runtime Library class documentation
+* [`6af32f4`](https://github.com/fusesource/jansi/commit/6af32f434126611cbe8f362bca2488e4f5e72859) fixed compiler warning
+* [`49e8293`](https://github.com/fusesource/jansi/commit/49e829380f599f79b8c82b3c8ea7aae56918ba02) improved javadoc
+* [`3302b8f`](https://github.com/fusesource/jansi/commit/3302b8f4d9276d0f1c1f3698bc5f6440d5dab5a8) added details on redirection to a file
+* [`9338527`](https://github.com/fusesource/jansi/commit/93385273035124d3541e90e3a15568371aa2f474) #124 detect console handle from stderr separately from stdout
 
 ## [Jansi 1.17.1][1_17_1], released 2018-04-16
 [1_17_1]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.17.1
@@ -247,7 +400,7 @@
 * Released to Maven Central.
 
 ## [Jansi 1.2][1_2], released 2010-02-09
-[1_2]: http://jansi.fusesource.org/repo/release/org/fusesource/jansi/jansi/1.2
+[1_2]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.2
 
 * Improved Java Docs.
 * Better windows ANSI handling of: erase screen and line and move to col.
@@ -256,18 +409,18 @@
 * Reset the attributes when the ANSI output stream is closed on unix.
 
 ## [Jansi 1.1][1_1], released 2009-11-23
-[1_1]: http://jansi.fusesource.org/repo/release/org/fusesource/jansi/jansi/1.1
+[1_1]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.1
 
 * AnsiRender can now be used in a static way and made easier to use with the ANSI builder.
 * Merged [Jason Dillon's Fork](http://github.com/jdillon/jansi/tree/bb86e0e79bec850167ddfd8c4a86fb9ffef704e5): 
 	* Pluggable ANSI support detection.
 	* ANSI builder can be configured to not generate ANSI escapes.
 	* AnsiRender provides an easier way to generate escape sequences.
-* [JANSI-5](http://fusesource.com/issues/browse/JANSI-5): Attribute Reset escape should respect original console colors.
-* [JANSI-4](http://fusesource.com/issues/browse/JANSI-4): Restore command console after closing wrapped OutputStream on Windows.
-* [JANSI-1](http://fusesource.com/issues/browse/JANSI-1): Added extensions for colors and other attributes to Ansi builder. 
+* [JANSI-5]: Attribute Reset escape should respect original console colors.
+* [JANSI-4]: Restore command console after closing wrapped OutputStream on Windows.
+* [JANSI-1]: Added extensions for colors and other attributes to Ansi builder. 
 
 ## [Jansi 1.0][1_0], released 2009-08-25
-[1_0]: http://jansi.fusesource.org/repo/release/org/fusesource/jansi/jansi/1.0
+[1_0]: https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.0
 
 * Initial Release.
