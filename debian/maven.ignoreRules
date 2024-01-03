@@ -19,6 +19,8 @@ org.apache.maven.plugins maven-javadoc-plugin * * * *
 org.apache.maven.plugins maven-site-plugin * * * *
 org.apache.maven.plugins maven-surefire-plugin * * * *
 org.apache.maven.plugins maven-dependency-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.sonatype.plugins nexus-staging-maven-plugin * * * *
 org.codehaus.mojo exec-maven-plugin * * * *
 org.fusesource.jansi jansi-linux32 * * * *
 org.fusesource.jansi jansi-linux64 * * * *

@@ -1,3 +1,21 @@
+jansi (2.4.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bypass TTY detection to preserve the Maven coloring with dpkg-buildpackage
+  * Exclude the Mac binaries from the upstream tarball
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 27 Sep 2022 19:51:25 +0200
+
+jansi (2.4.0-1) unstable; urgency=medium
+
+  * New upstream version 2.4.0.
+  * Add myself to Uploaders.
+  * Switch to debhelper-compat = 13.
+  * Declare compliance with Debian Policy 4.6.1.
+  * Update debian/watch.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 22 Jun 2022 17:03:49 +0200
+
 jansi (1.18-1) unstable; urgency=medium
 
   * Team upload.
